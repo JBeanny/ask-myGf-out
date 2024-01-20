@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Yaya for a date 🤔</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <h1 class="text-2xl" id="init">
+        Hello my lovely Yaya 🫰, One question please 🙏
+      </h1>
+      <button onclick="startQuestions()" id="que">Sure, ask me !</button>
+      <br />
+      <img src="./images/question.png" id="image" />
+
+      <div id="questions" style="display: none">
+        <h1 class="text-3xl mt-8">ចង់សួរថា:</h1>
+        <h3 class="text-2xl">ញ៉ាំអីអត់ថ្ងៃព្រហស្បតិ៍ ?</h3>
+        <button onclick="answerYes()">Yes sir you noob</button>
+        <button onclick="answerNo()" class="no">No, I can't</button>
+      </div>
+
+      <div id="message" style="display: none">
+        <h3 id="messageText"></h3>
+      </div>
+    </div>
+
+    <canvas id="confetti-canvas"> </canvas>
+
+    <footer class="text-center mt-8">
+      Made with ❤️ by Tharoth, your boyfriend 😗
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
